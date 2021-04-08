@@ -141,7 +141,7 @@ class MakeData (wid.QMainWindow):
                     zrange=(self.zoomXSlider,1)
                 else:
                     zrange=(1,self.zoomXSlider)
-                datagen=ImageDataGenerator(horizontal_flip=self.flipCheckBoxX,vertical_flip=self.flipCheckBoxY,
+                datagen=ImageDataGenerator(horizontal_flip=self.flipCheckBoxY,vertical_flip=self.flipCheckBoxX,
                         height_shift_range=self.heightSlider/100,width_shift_range=self.widthSlider/100,
                         brightness_range=(self.brightnessBox,1.2),shear_range=self.shearSlider/10,
                         zoom_range=zrange,rotation_range=self.rotationDial,fill_mode=self.fill_mode
